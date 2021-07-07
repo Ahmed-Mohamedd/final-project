@@ -68,6 +68,7 @@ header .navbar
 width: 100%;
 height: 90px;
 position: fixed;
+z-index: 1;
 }
 header .navbar .navbar-brand
 {
@@ -310,14 +311,15 @@ position: fixed;
 right: 3%;
 bottom: 6%;
 border: 1px solid  #FF5363;
-border-radius: 3px;
-width: 25px;
-height: 25px;
+border-radius: 8px;
+width:30px;
+height: 30px;
 background-color: #FF5363;
 display: none;
+z-index: 3;
 }
 header .icon-top a{
-    
+    padding-left: 4px;
 }
 header .icon-top a .fa-arrow-up{
     font-size: 22px;
@@ -988,15 +990,78 @@ footer{
     }
 
 }
-@media (max-width: 768px) {
-    header .banner .banner-text-nums {
-        width: 100%;
-        padding: 80px 0;
-        margin-left: 0px;
+@media (max-width: 720px) {
+    .style-h2 {
+        font-size: 22px;
+    }
+    .style-h3 {
+        font-size: 14px;
     }
     header .navbar .navbar-brand {
         margin-left: 120px;
     }
+    
+    header .banner .bn-text .text-head .h2-head {
+    font-size: 50px;
+    font-weight: 900;
+    color: #FF5363;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-left: -63px;
+    }
+
+
+    header .banner .bn-text .text-head .h3-head {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #50658e;
+    font-family: sans-serif;
+    margin-top: -65px;
+    margin-left: 282px;
+    font-weight: 600;
+    }
+
+
+
+    header .banner .bn-text .text-head .h2-head2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #FF5363;
+    font-family: sans-serif;
+    margin-left: 273px;
+    font-weight: 600;
+    }
+    header .banner .banner-text-nums {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    header .banner .banner-text-nums .banner-num1 ,
+    .banner-num2 
+    {
+        border-radius: 8px;
+        margin-bottom: 5px;
+    }
+    header .banner .banner-text-nums .banner-num3 {
+        border-radius: 8px;
+    }
+    .syptoms .syptoms-button .text {
+        display: flex;
+        left: 0px;
+    }
+    .treatment .treatment-carevull {
+        left: 0%;
+    }
+    .faq .faq-box-select {
+        left: 0%;
+    }
+
+    
+    
+    
 }
 @media (min-width: 768px) {
     .protect .protect-imgs .protect-imgs1 .box .icon{
